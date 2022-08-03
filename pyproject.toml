@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-mailbox"
+version = "0.2.0"
+description = "Import mail from POP3, IMAP, local mailboxes or directly from Postfix or Exim4 into your Django application automatically"
+authors = ["Patrick <pdassier@free.fr>", "Adam Coddington <me@adamcoddington.net>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = ">=4.0.0"
+six = "^1.16.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "2.9.1"
+pytest-django = "2.9.1"
+mock = "2.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
